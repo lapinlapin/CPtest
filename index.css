@@ -299,61 +299,7 @@ body
 
 .projects
 {
-	min-width: 1010px;
 	text-align: center;
-}
-
-.projects__item span
-{
-	font: 20px Times New Roman;
-	border-bottom: 1px solid #E53C20;
-}
-
-.foralign
-{
-	margin: 0 85px;
-}
-
-.projects__item
-{
-	display: inline-block;
-	min-width: 25%;
-	position: relative;
-}
-
-.title-block
-{
-	margin-bottom: 15px;
-}
-
-.navigation img
-{
-	min-width: 100%;
-}
-
-.navigation__control
-{
-	width: 100%;
-	height: 35px;
-	margin-top: -39px;
-	text-align: center;
-}
-
-.navigation__control div
-{
-	width: 100%;
-	text-align: center;
-	font: italic 13px Arial;
-	color: #fff;
-	margin-top: -28px;
-}
-
-.count
-{
-	position: absolute;
-	font: italic 30px Times New Roman;
-	top: 45px;
-	right: -15px;
 }
 
 .spain
@@ -655,4 +601,145 @@ span.cp
 {
 	font-style: italic;
 	border-bottom: 1px solid #505050;
+}
+
+/*------------------CAROUSEL----------------------*/
+
+.carousel-items, .carousel-labels {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.carousel-item {
+	display: block;
+	float: left;
+	text-align: center;
+	position: relative;
+}
+
+.carousel-item h3
+{
+	display: inline-block;
+	font: 20px Times New Roman;
+	border-bottom: 1px solid #E53C20;
+	margin-bottom: 18px;
+}
+
+.count-of
+{
+	font: italic 32px Times New Roman;
+	position: absolute;
+	top: 65px;
+	right: 3px;
+	z-index: 10;
+}
+
+.carousel-wrapper {
+	width: 310px;
+	display: inline-block;
+	position: relative;
+	padding-bottom: 255px;
+	overflow: hidden;
+}
+
+.cw-2
+{
+	margin: 0 35px;
+}
+
+.carousel-items {
+	width: 300%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	transition: left .5s ease-out;
+	-o-transition: left .5s ease-out;
+	-ms-transition: left .5s ease-out;
+	-moz-transition: left .5s ease-out;
+	-webkit-transition: left .5s ease-out;
+}
+.carousel-item {
+	width: 33.333%;
+	padding-top: 20px;
+}
+
+.carousel-labels {
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	bottom: 0;
+	width: 310px;
+	height: 35px;
+	overflow:hidden;
+	
+}
+.carousel-selector {
+	display: none;
+}
+.carousel-label {
+	display: inline-block;
+	cursor: pointer;
+	
+}
+.carousel-label label {
+	width: 50px;
+	height: 35px;
+	cursor: pointer;
+	display: block;
+	position: relative;
+}
+
+.carousel-label img
+{
+	position: absolute;
+	bottom: 2px;
+	left: 17px;
+}
+
+.prior
+{
+	float: left;
+}
+
+.prj-name
+{
+	position: absolute;
+	z-index: 11;
+	top: 229px;
+	left: 40px;
+	width: 230px;
+	text-align: center;
+	font: italic 13px Arial;
+	color: #fff;
+	display: inline-block;
+}
+
+.next
+{
+	float: right;
+}
+
+#slide1:checked ~ .carousel-items {
+	left: 0;
+}
+
+#slide2:checked ~ .carousel-items {
+	left: -100%;
+}
+
+#slide3:checked ~ .carousel-items {
+	left: 0;
+}
+
+#slide4:checked ~ .carousel-items {
+	left: -100%;
+}
+
+#slide5:checked ~ .carousel-items {
+	left: 0;
+}
+
+#slide6:checked ~ .carousel-items {
+	left: -100%;
 }
